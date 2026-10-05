@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agreed Terms · GLM Key Tracker</title>
+  <meta name="description" content="Agreed operating terms for Wolfy's GLM key." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .terms { max-width: 760px; margin: 0 auto; }
+    .terms ul { list-style: none; padding: 0; margin: 1.5rem 0; }
+    .terms li { padding: 1rem 0; border-bottom: 1px solid var(--panel-edge); }
+    .terms li:last-child { border-bottom: 0; }
+    .terms strong { color: var(--accent); }
+    .back-link { color: var(--accent-2); }
+    .back-link:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1>Wolfy's GLM Key — Agreed Terms</h1>
+      <p class="tagline">The operating terms for the current key-sharing campaign.</p>
+    </header>
+    <main class="terms">
+      <p><a class="back-link" href="index.html">← Back to the GLM Key Tracker</a></p>
+      <section aria-labelledby="terms-heading">
+        <h2 id="terms-heading">Key and campaign</h2>
+        <ul>
+          <li><strong>Model:</strong> The key is pinned to <code>glm-5.3-flash</code>.</li>
+          <li><strong>Active window:</strong> 18:00–04:00 EEST. The campaign ends Oct 7.</li>
+          <li><strong>Scheduled lock and unlock:</strong> The Pi cron locks the key at 04:00 and unlocks it at 18:00.</li>
+          <li><strong>Projects:</strong> No new repositories or projects.</li>
+        </ul>
+      </section>
+      <section aria-labelledby="checks-heading">
+        <h2 id="checks-heading">Activity checks and deadlines</h2>
+        <ul>
+          <li><strong>Two-hour status check:</strong> At each check, receipts must show at least one commit or API call since the previous check.</li>
+          <li><strong>Grace period:</strong> There is a 15-minute grace period after each deadline.</li>
+          <li><strong>Missed check:</strong> If no commit or API traffic is seen and no acknowledgement is received by the deadline, the key is put on hold until the matter is resolved. This is a hold, not an automatic kill. Unholding the key takes a single message.</li>
+        </ul>
+      </section>
+      <section aria-labelledby="credits-heading">
+        <h2 id="credits-heading">Final gate for credits</h2>
+        <ul>
+          <li><strong>Oral check — Proof of Humanity:</strong> Demonstrate daily use, explain the choices made, and trace a request. Passing this oral check is the final gate for credits.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>These terms do not publish or expose any key or secret.</p>
+    </footer>
+  </div>
+</body>
+</html>

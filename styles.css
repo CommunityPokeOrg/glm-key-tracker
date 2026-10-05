@@ -59,6 +59,30 @@ h1 {
 
 .notice strong { color: var(--warn); }
 
+.telemetry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 2rem;
+  justify-content: center;
+  margin: 1.4rem auto 0;
+  padding: 0.7rem 1.1rem;
+  max-width: 62ch;
+  background: var(--bg-soft);
+  border: 1px solid var(--panel-edge);
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.telemetry-meta > div { display: flex; gap: 0.45rem; align-items: baseline; }
+.telemetry-meta dt { color: var(--accent-2); font-weight: 600; margin: 0; }
+.telemetry-meta dd { margin: 0; color: var(--ink); }
+
+.section-note {
+  margin: -0.3rem 0 0.7rem;
+  color: var(--ink-dim);
+  font-size: 0.85rem;
+}
+
 section { margin-top: 2.5rem; }
 
 h2 {
@@ -141,6 +165,9 @@ td.mono { white-space: nowrap; }
   padding: 0.15rem 0.55rem;
   font-size: 0.85rem;
 }
+
+#usage-table td:nth-child(6),
+#usage-table th:nth-child(6) { min-width: 11rem; }
 
 .empty-row td {
   text-align: center;

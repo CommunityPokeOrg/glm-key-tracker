@@ -16,11 +16,19 @@ operational, and there is deliberately no way to enter, submit, or store any cre
 
 All table content lives in [`data.json`](data.json):
 
+- `telemetryUpdatedAt` — shown near the top; empty renders as `—`.
+- `costEstimateReference` — the basis/rate source for cost estimates; empty renders as `—`.
 - `keys[]` — one object per tracked key (`label`, `holder`, `model`, `budgetCap`,
   `activeWindow`, `expires`, `status`, `lastToggled`). Empty strings render as `to be set`
   placeholders.
-- `usageLog[]` — one object per session (`date`, `sessionStart`, `sessionEnd`,
-  `totalTokensMillions`, `tokensPerSecond`, `notes`).
+- `usageLog[]` — one object per 15-minute aggregate bucket:
+  `date`, `sessionStart`, `sessionEnd`, `totalTokensMillions`, `tokensPerSecond`, `notes`,
+  `promptTokens`, `completionTokens`, `requestCount`, `errorCount`, `rateLimit429Count`,
+  `server5xxCount`, `averageLatencyMs`, `estimatedCostSavedUsd`, `costEstimateMethod`,
+  `costRateSource`, `bucketMinutes`. All optional — missing values render as `—`.
+
+Keep usage entries to aggregates and counters only: never prompts, responses, keys, or
+per-user details.
 
 Edit the file, commit, push — GitHub Pages republishes automatically.
 

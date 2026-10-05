@@ -20,6 +20,11 @@
         live, and nothing on this page proves a key is working. There are no real API keys on this
         site, and there is no way to enter, submit, or store one.
       </div>
+      <dl class="telemetry-meta">
+        <div><dt>Telemetry updated</dt><dd id="telemetry-updated" class="mono">—</dd></div>
+        <div><dt>Cost estimate basis</dt><dd id="cost-reference" class="mono">—</dd></div>
+        <div><dt>Data policy</dt><dd>aggregates &amp; counters only</dd></div>
+      </dl>
     </header>
 
     <main>
@@ -46,10 +51,11 @@
       </section>
 
       <section aria-labelledby="usage-heading">
-        <h2 id="usage-heading">Usage log <span class="hint">for vwh to fill in — rows live in <code class="datafile">data.json</code></span></h2>
+        <h2 id="usage-heading">Usage log <span class="hint">15-minute aggregates for vwh to fill in — rows live in <code class="datafile">data.json</code></span></h2>
+        <p class="section-note">Aggregate counters only — no prompts, no responses, no keys, no per-user details.</p>
         <div class="table-scroll">
           <table id="usage-table">
-            <caption class="visually-hidden">Usage sessions log (placeholder rows)</caption>
+            <caption class="visually-hidden">Usage log of 15-minute aggregate buckets (placeholder rows)</caption>
             <thead>
               <tr>
                 <th scope="col">Date</th>
@@ -58,6 +64,17 @@
                 <th scope="col">Total tokens (M)</th>
                 <th scope="col">Tokens / sec</th>
                 <th scope="col">Notes</th>
+                <th scope="col">Prompt tokens</th>
+                <th scope="col">Completion tokens</th>
+                <th scope="col">Requests</th>
+                <th scope="col">Errors</th>
+                <th scope="col">429s</th>
+                <th scope="col">5xx</th>
+                <th scope="col">Avg latency (ms)</th>
+                <th scope="col">Est. cost saved (USD)</th>
+                <th scope="col">Cost method</th>
+                <th scope="col">Rate source</th>
+                <th scope="col">Bucket (min)</th>
               </tr>
             </thead>
             <tbody></tbody>

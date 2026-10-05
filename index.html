@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GLM Key Tracker</title>
+  <meta name="description" content="Community placeholder tracker for a shared GLM flash key — manual status only, no real credentials." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%9D%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <span class="key-emoji" aria-hidden="true">🗝️</span>
+      <h1>GLM Key Tracker</h1>
+      <p class="tagline">One shared flash key, lovingly watched by the community — and by cron.</p>
+      <div class="notice" role="note">
+        <strong>Heads up:</strong> this page is a <strong>placeholder tracker only</strong>.
+        Every value here is hand-edited in <code class="datafile">data.json</code> — nothing is read
+        live, and nothing on this page proves a key is working. There are no real API keys on this
+        site, and there is no way to enter, submit, or store one.
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="status-heading">
+        <h2 id="status-heading">Key status <span class="hint">manual entries — edit <code class="datafile">data.json</code></span></h2>
+        <div class="table-scroll">
+          <table id="key-table">
+            <caption class="visually-hidden">Status of shared GLM keys (placeholder values)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Key label</th>
+                <th scope="col">Holder</th>
+                <th scope="col">Model</th>
+                <th scope="col">Budget cap</th>
+                <th scope="col">Active window</th>
+                <th scope="col">Expires</th>
+                <th scope="col">Status</th>
+                <th scope="col">Last toggled</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="usage-heading">
+        <h2 id="usage-heading">Usage log <span class="hint">for vwh to fill in — rows live in <code class="datafile">data.json</code></span></h2>
+        <div class="table-scroll">
+          <table id="usage-table">
+            <caption class="visually-hidden">Usage sessions log (placeholder rows)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Session start</th>
+                <th scope="col">Session end</th>
+                <th scope="col">Total tokens (M)</th>
+                <th scope="col">Tokens / sec</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-labelledby="requirements-heading">
+        <h2 id="requirements-heading">Requirements</h2>
+        <div class="card">
+          <ul class="rules">
+            <li><strong>Model pinned to flash.</strong> No hopping to bigger models — flash is the whole point of this campaign.</li>
+            <li><strong>Hard budget cap.</strong> When the cap is hit, the key goes quiet. Amount TBD in <code class="datafile">data.json</code>.</li>
+            <li><strong>Campaign-window-only use.</strong> Requests only inside the active window above — outside it, the key stays locked.</li>
+            <li><strong>Existing projects only.</strong> sims4-funeral-mod, harmonyos-web3-wallet, and the frameeyeosc fork.</li>
+            <li><strong>No new repos.</strong> The key does not fund brand-new projects.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="credits-heading">
+        <h2 id="credits-heading">Credits — the three mod-run gates</h2>
+        <div class="card">
+          <ol class="gates">
+            <li>Something actually gets used day to day — a real thing in real rotation, not a demo.</li>
+            <li>He can explain the choices made: the language, the libraries, and why this platform.</li>
+            <li>He can trace what happens end to end when a request is sent — with no AI help during the oral check.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Locking and unlocking is handled by cron on vwh's own server, with a backup lock. This site is a
+      read-only display of hand-edited placeholder data — it does not execute lock/unlock, and it does not
+      manage, accept, or store credentials of any kind.</p>
+      <p>Values live in <code class="datafile">data.json</code>. Edit the file, push, done.</p>
+    </footer>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
